@@ -19,11 +19,12 @@ namespace ParcialEF
         public string Cantidad { get; set; }
         public string Precio { get; set; }
         
-        public Producto Producto { get; set; }
+        public virtual Producto Producto { get; set; }
         
-        public Venta Venta { get; set; }
-
+        public virtual Venta Venta { get; set; }
     }
+
+
     [Table("Productos")]
     public class Producto
     {
@@ -34,10 +35,9 @@ namespace ParcialEF
         public string Nombre { get; set; }
         public string Precio { get; set; }
         public string Existencia { get; set; }
-
-   
-
     }
+
+
     public class Venta
     {
         public int VentaId { get; set; }
@@ -46,7 +46,6 @@ namespace ParcialEF
         public string Fecha { get; set; }
         public string Cliente { get; set; }
 
-        public virtual Producto Producto { get; set; }
     }
 
 }

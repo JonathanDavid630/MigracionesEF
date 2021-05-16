@@ -7,13 +7,13 @@ namespace ParcialEF.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Prueba : IMigrationMetadata
+    public sealed partial class PruebaFinal : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Prueba));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PruebaFinal));
         
         string IMigrationMetadata.Id
         {
-            get { return "202105162130164_Prueba"; }
+            get { return "202105162245475_PruebaFinal"; }
         }
         
         string IMigrationMetadata.Source
