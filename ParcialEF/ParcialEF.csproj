@@ -55,9 +55,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202105162245475_PruebaFinal.cs" />
-    <Compile Include="Migrations\202105162245475_PruebaFinal.designer.cs">
-      <DependentUpon>202105162245475_PruebaFinal.cs</DependentUpon>
+    <Compile Include="Migrations\202105162316288_primera.cs" />
+    <Compile Include="Migrations\202105162316288_primera.designer.cs">
+      <DependentUpon>202105162316288_primera.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="parcialEF.cs" />
@@ -70,8 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202105162245475_PruebaFinal.resx">
-      <DependentUpon>202105162245475_PruebaFinal.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105162316288_primera.resx">
+      <DependentUpon>202105162316288_primera.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

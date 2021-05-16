@@ -6,32 +6,50 @@ using System.Threading.Tasks;
 
 namespace ParcialEF
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
             parcialEF db = new parcialEF();
-            ////insertar
+            /* ---------------------INSERT---------------------- */
 
             //Venta venta = new Venta();
-            //venta.Fecha = "martes 27 de enero de 2019";
-            //venta.Cliente = "Pepe Antonio";
-            //db.Ventas.Add(venta);
+            //venta.Fecha = "sabado 31 de enero de 2019";
+            //venta.Cliente = "Luis Fernando";
 
             //Producto producto = new Producto();
-            //producto.Nombre = "Samsung Galaxy s20";
-            //producto.Precio = "900.000";
-            //producto.Existencia = "12";
+            //producto.Nombre = "Xiaomi Mi10 Ultra";
+            //producto.Precio = "1200.000";
+            //producto.Existencia = "10";
             //db.productos.Add(producto);
 
             //DetalleVenta detalleVenta = new DetalleVenta();
             //detalleVenta.Cantidad = "1";
-            //detalleVenta.Precio = "900.00";
+            //detalleVenta.Precio = "1200.00";
             //detalleVenta.Venta = venta;
             //detalleVenta.Producto = producto;
             //db.detalleVentas.Add(detalleVenta);
             //Console.ReadKey();
 
+            //db.SaveChanges(); // envia los cambios/datos
+            ////Console.WriteLine("el ID despues de guardar {0}", venta.VentaId);
+            //Console.ReadKey();
+
+
+
+            /* ---------------------SELECT---------------------- */
+
+            //parcialEF db = new parcialEF();
+            ////unica venta  con estilo linq
+            //Venta venta = new Venta();
+            //venta = (from i in db.Ventas where i.VentaId ==3 select i).First();
+
+            //Console.WriteLine("El nombre de el cliente es {0} y id {1}", venta.Cliente,venta.VentaId);
+            //Console.ReadKey();
+
+
+
+            /* ---------------------PROPIEDADES DE NAVEGACION---------------------- */
             DetalleVenta detalleVenta = new DetalleVenta();
             detalleVenta = db.detalleVentas.Where(x => x.IdDetalleVenta == 3).First();
             Console.WriteLine("Nombre de comprador {0}", detalleVenta.Venta.Cliente);

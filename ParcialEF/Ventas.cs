@@ -15,7 +15,7 @@ namespace ParcialEF
         //entity framework notaciones
         [Key]
         public int IdDetalleVenta { get; set; }
-        [MaxLength(250), MinLength(10)]
+     
         public string Cantidad { get; set; }
         public string Precio { get; set; }
         
@@ -41,11 +41,8 @@ namespace ParcialEF
     public class Venta
     {
         public int VentaId { get; set; }
-        [MaxLength(250), MinLength(5)]
-
+      
         public string Fecha { get; set; }
         public string Cliente { get; set; }
-
     }
-
 }
